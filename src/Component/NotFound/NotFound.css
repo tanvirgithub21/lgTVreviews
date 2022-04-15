@@ -1,0 +1,26 @@
+.notFound{
+    height: calc(100vh - 2.5rem);
+}
+@media only screen and (max-width: 680px) {
+    .notFound{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .notFoundImgBox img{
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 1030px) {
+    .notFound{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+    }
+    .notFoundImgBox img{
+        width: 100%;
+    }
+}

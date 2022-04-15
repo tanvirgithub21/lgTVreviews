@@ -1,0 +1,15 @@
+.reviewsBox {
+  max-width: 1280px;
+  margin: 3rem auto;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 45% 45%;
+  grid-gap: 1.7rem;
+}
+
+/* responsive style  */
+@media only screen and (max-width: 801px) {
+  .reviewsBox {
+    grid-template-columns: 95%;
+  }
+}

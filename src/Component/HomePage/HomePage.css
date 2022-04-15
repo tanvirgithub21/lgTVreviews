@@ -1,0 +1,122 @@
+.homePageWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 2.8rem);
+    overflow: hidden;
+}
+.infoBox{
+    flex: 7;
+}
+.infoBox h1{
+    text-align: start;
+    font-size: 3rem;
+}
+.infoBox p{
+    max-width: 35rem;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    padding-top: 1rem;
+}
+.imageBox{
+    flex: 5;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.imageBox img{
+    width: 100%;
+}
+
+.homeReviewsBox{
+    background-color: red;
+    color: white;
+    height: 500px;
+}
+
+
+
+/* someReviews  */
+.someReviews{
+    display: grid;
+    grid-template-columns: 34.5rem;
+    justify-content: center;
+    grid-gap: 1.2rem;
+}
+
+.someReviewsBox{
+    margin: 2rem 0rem;
+}
+.someReviewsBox h1{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+    
+}
+
+.someReviewsBox h1::before{
+    content: "";
+    width: 13.5rem;
+    height: 3px;
+    border-bottom: 2px solid red;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.seeallbtn{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+@media only screen and (max-width: 985px) {
+    .infoBox h1{
+        font-size: 2rem;
+    }
+    .infoBox p{
+        max-width: 30rem;
+        font-size: 1.1rem;
+        margin-left: 1rem;
+        padding-top: 1rem;
+    }
+}
+@media only screen and (max-width: 680px) {
+    .homePageWrap{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        height: auto;
+    }
+    .infoBox{
+        order: 2;
+        width: 100%;
+
+    }
+    .imageBox{
+        order: 1;
+    }
+    .infoBox h1{
+        font-size: 1.7rem;
+        text-align: center;
+    }
+    .infoBox p{
+        font-size: 1.1rem;
+        text-align: center;
+        margin: auto;
+    }
+    .imageBox img{
+        width: 70%;
+        margin: auto;
+    }
+    .someReviews{
+        min-width: 17rem;
+        grid-template-columns: 1fr;
+    }
+}

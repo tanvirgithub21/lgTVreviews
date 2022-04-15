@@ -1,0 +1,81 @@
+.mainDashboard{
+    overflow: hidden;
+}
+.sectionHeader h1{
+    text-align: center;
+    font-size: 2.1rem;
+    margin: 1rem 0  0 0;
+    font-weight: 500;
+    position: relative;
+}
+
+.sectionHeader h1::before{
+    content: "";
+    width: 250px;
+    height: .3rem;
+    border-bottom: 2px solid rgb(0, 1, 22);
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.AllChartBox{
+    margin: 2.5rem 1rem;
+    display: grid;
+    grid-template-columns: 27rem 27rem;
+    grid-gap: 1.5rem;
+    justify-content: center;
+    overflow-x: hidden;
+}
+.responsiveContainer{
+    border: 1px solid rgba(128, 128, 128, 0.233);
+    border-radius: .5rem;
+}
+.responsiveContainer h2{
+    text-align: center;
+   font-size: 1.5rem;
+   font-weight: 500;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+   position: relative;
+}
+.responsiveContainer h2::before{
+    content: "";
+    width: 25%;
+    height: 3px;
+    border-bottom: 2px solid red;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.chartBox{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+
+
+@media only screen and (max-width: 868px) {
+    .AllChartBox{
+        grid-template-columns: 27em;
+    }
+    .responsiveContainer{
+        width: 320px;
+        margin: auto;
+    }
+    .responsiveContainer h2{
+       font-size: 1.2rem;
+    }
+    .sectionHeader h1{
+        font-size: 1.6rem;
+        margin-bottom: 0px;
+    }
+    .sectionHeader h1::before{
+        width: 175px;
+        transform: translateX(-50%);
+    }
+}
